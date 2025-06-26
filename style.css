@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lobster", sans-serif;
+    scroll-behavior: smooth;
+}
+boby{
+    padding-top: 100px;
+}
+
+p{
+    font-weight: 300;
+    color: #c0c0c0;
+
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+.logo{
+    color: #c0c0c0;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span{
+    color: #f6d8ce;
+
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: #c0c0c0;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+header .navbar li a:hover{
+    color: #f6d8ce;
+    border-bottom: 2px solid gray;
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/accuiel\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+    color: #f6d8ce;
+    font-size: 2em;
+    text-transform: capitalize;
+
+}
+
+.contenu p:nth-child(2){
+    color: #c0c0c0;
+    font-size: 0.9em;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row collis{
+    position: relative;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row collis{
+    margin-bottom: 20px;
+}
+
+.titre-texte{
+    color: #000;
+    font-size: 1.9em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+
+.titre-texte span{
+    color: #f6d8ce;
+    font-size: 1.4em;
+    font-weight: 700px;
+    position: relative;
+}
