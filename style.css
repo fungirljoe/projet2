@@ -5,9 +5,6 @@
     font-family: "Lobster", sans-serif;
     scroll-behavior: smooth;
 }
-boby{
-    padding-top: 100px;
-}
 
 p{
     font-weight: 300;
@@ -54,7 +51,7 @@ header{
 .navbar a{
     color: #c0c0c0;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 60px;
     font-weight: 700;
 }
 
@@ -89,6 +86,35 @@ header .navbar li a:hover{
     color: #c0c0c0;
     font-size: 0.9em;
 }
+.btn1{
+    font-size: 1em;
+    color: #f6d8ce;
+    background: chocolate;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn2{
+    font-size: 1em;
+    color: #f6d8ce;
+    background: #381819;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+
 
 section{
     padding: 100px;
