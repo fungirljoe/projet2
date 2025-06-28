@@ -347,12 +347,178 @@ section{
 }
 
 .terme{
-    background: #f8f9fa;
+    background: white;
     padding: 15px;
     border-radius: 5px;
 }
 
 .terme h4{
-    color: #f8f9fa;
+    color: black;
     margin-bottom: 5px;
+}
+
+.histoire{
+    padding: 100px 10%;
+    background-color: #f5f0ff;
+}
+
+.histoire-intro{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.timeline{
+    position: relative;
+    padding-left: 50px;
+    margin: 40px 0;
+}
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #f6d8ce;
+}
+
+.timeline-item{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-date{
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f1c40f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 0 004px white, 0 0 0 6px #f1c40f;
+}
+
+.timeline-content{
+    background: white;
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-content h4{
+    color: #f6d8ce;
+    margin-bottom: 10px;
+}
+
+.timeline-content::before{
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid white;
+}
+
+.resistance-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.resistance-card{
+    background: white;
+    border-radius: 8px ;
+    overflow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.resistance-card:hover{
+    transform: translateX(-10px);
+}
+
+.resistance-era{
+    background: #f6d8ce;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.resistance-content{
+    padding: 20px;
+    line-height: 1.7;
+}
+
+.culture-vivante{
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 60px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.culture-vivante h3{
+    color: #f6d8ce;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.saviez-vous{
+    background: #f9f4ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border-left: 4px solid #f1c40f;
+}
+
+.saviez-vous h4{
+    color: #f6d8ce;
+    margin-bottom: 15px;
+}
+
+.saviez-vous ul{
+    padding-left: 20px;
+}
+
+.saviez-vous li{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.saviez-vous li::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    color: #f1c40f;
+}
+/* responsive */
+@media (max-width) {
+    .timeline{
+        padding-left: 30px;
+    }
+    .timeline-date{
+        left: -30px;
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    .resistance-grid{
+        grid-template-columns: 1fr;
+    }
+    .culture-vivante{
+        padding: 20px;
+    }
 }
